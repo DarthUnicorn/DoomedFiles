@@ -419,7 +419,7 @@ public class Splash extends javax.swing.JPanel {
             currentFrame.dispose();
 
             try {
-                User user = new User(Inet4Address.getLocalHost().getHostAddress());
+                User user = new User("localhost");
 
                 user.setId(id);      
 

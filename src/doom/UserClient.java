@@ -11,7 +11,7 @@ class UserClient
     public static ArrayList<User> getOnlineUsers(User newUser) throws IOException, ClassNotFoundException 
     { 
         ArrayList<User> users = new ArrayList<>(); 
-        String host = Inet4Address.getLocalHost().getHostAddress(); 
+        String host = "localhost"; 
         Socket clientSocket = new Socket(host, 6789);
         OutputStream outputStream = clientSocket.getOutputStream();
         
@@ -79,7 +79,7 @@ class UserClient
     public static ArrayList<User> getOnlineUsers() throws IOException, ClassNotFoundException 
     {
         ArrayList<User> users = new ArrayList<>(); 
-        String host = Inet4Address.getLocalHost().getHostAddress(); 
+        String host = "localhost"; 
         Socket clientSocket = new Socket(host, 6789);
         OutputStream outputStream = clientSocket.getOutputStream();
         
