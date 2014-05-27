@@ -3,10 +3,7 @@ package doom;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-
-/**
- * @author tassadar
- */
+ 
 public class ChatClientConnection 
 {
     private static String host;
